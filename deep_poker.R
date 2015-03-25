@@ -36,12 +36,12 @@ sol_h2o <- as.h2o(localh2o,test,key='test')
 model<-h2o.deeplearning(x= 1:10,
                         classification=T,
                         y= 11,
-                        data=dat_new_h2o,
+                        data=dat_h2o,
                         activation="RectifierWithDropout",
                         hidden_dropout_ratio=c(.2,.3,.2),
                         l1=1e-5,
                         hidden = c(500,500,500),
-                        epochs = 20)
+                        epochs = 100)
 
 h2o_predicted<-h2o.predict(model,sol_h2o)
 predicted<-as.data.frame(h2o_predicted)
