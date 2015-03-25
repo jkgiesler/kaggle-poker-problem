@@ -21,7 +21,6 @@ def feature_maker(filename,train):
 		card5 = row[8:10]
 		poker_cat = row[10]
 		
-		##sort cards by the card value not suit
 		orig_hand = [card1,card2,card3,card4,card5]
 		orig_hand.sort(key=lambda x:x[1],reverse=True)
 		all_hands = itertools.permutations(orig_hand)
