@@ -1,2 +1,2 @@
 # kaggle_poker
-Poker rule induction using random forests and h2o.ai
+Poker rule induction using random forests and h2o.ai's deep learning package.
